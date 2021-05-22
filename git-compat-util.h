@@ -1384,4 +1384,10 @@ void sleep_millisec(int millisec);
 
 #endif
 
+/*
+ * Convert PID to process name (as would show in top/task manager). Returns
+ * NULL if unimplemented - be sure to check for NULL at callsite.
+ */
+char *get_process_name(int pid);
+
 #endif
